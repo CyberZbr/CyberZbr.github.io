@@ -10,10 +10,12 @@
   <div class="header">
     <img src="assets/avatar.jpg" alt="头像" class="avatar"/>
     <div class="info">
-      <h1>张博然</h1>
-      <p>2023-2027 西南大学 计算机与信息科学学院 软件学院 计算机科学与技术
-         研究兴趣：计算机图形学，三维重建，低空智能,CoT,大语言模型
-      </p>
+      <h1>你的名字</h1>
+      <p>2023-2027 西南大学 计算机与信息科学学院 软件学院 计算机科学与技术<br>
+         研究兴趣：计算机图形学，三维重建，低空智能,CoT,大语言模型 <br>
+         Email: hedesmeow@gmail.com <br>
+         Github: <a href="https://github.com/CyberZbr">CyberZbr</a><br>
+    </p>
     </div>
   </div>
   <div class="tabs">
@@ -23,25 +25,47 @@
     <button class="tab" data-tab="blog">技术博客</button>
   </div>
   <div class="tab-content">
+    <!-- 研究 -->
     <div class="tab-panel active" id="research">
-      <!-- 研究内容 -->
-      <h2>研究</h2>
-      <p>...</p>
+      <h2>研究方向/项目</h2>
+      <form id="research-form">
+        <input type="text" id="research-title" placeholder="研究方向/项目名称" required>
+        <input type="text" id="research-desc" placeholder="简要描述" required>
+        <button type="submit">添加</button>
+      </form>
+      <ul id="research-list"></ul>
     </div>
+    <!-- 发表 -->
     <div class="tab-panel" id="publications">
-      <!-- 发表内容 -->
-      <h2>发表</h2>
-      <p>...</p>
+      <h2>论文发表</h2>
+      <form id="pub-form">
+        <input type="text" id="pub-title" placeholder="论文名" required>
+        <input type="text" id="pub-conf" placeholder="会议名" required>
+        <input type="url" id="pub-link" placeholder="论文链接" required>
+        <button type="submit">添加</button>
+      </form>
+      <ul id="pub-list"></ul>
     </div>
+    <!-- 日常 -->
     <div class="tab-panel" id="daily">
-      <!-- 日常内容 -->
-      <h2>日常</h2>
-      <p>...</p>
+      <h2>日常动态</h2>
+      <form id="daily-form">
+        <textarea id="daily-text" placeholder="说点什么..." required></textarea>
+        <input type="file" id="daily-img" accept="image/*">
+        <button type="submit">发布</button>
+      </form>
+      <div id="daily-list"></div>
     </div>
+    <!-- 技术博客 -->
     <div class="tab-panel" id="blog">
-      <!-- 技术博客内容 -->
       <h2>技术博客</h2>
-      <p>...</p>
+      <form id="blog-form">
+        <input type="text" id="blog-title" placeholder="文章标题" required>
+        <textarea id="blog-content" placeholder="文章内容（支持Markdown）" required></textarea>
+        <input type="file" id="blog-img" accept="image/*">
+        <button type="submit">发布</button>
+      </form>
+      <div id="blog-list"></div>
     </div>
   </div>
   <script src="script.js"></script>
