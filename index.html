@@ -1,1 +1,49 @@
-<h1>Hello World!</h1>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CyberZbr的个人主页</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="header">
+    <img src="assets/avatar.jpg" alt="头像" class="avatar"/>
+    <div class="info">
+      <h1>张博然</h1>
+      <p>2023-2027 西南大学 计算机与信息科学学院 软件学院 计算机科学与技术
+         研究兴趣：计算机图形学，三维重建，低空智能,CoT,大语言模型
+      </p>
+    </div>
+  </div>
+  <div class="tabs">
+    <button class="tab active" data-tab="research">研究</button>
+    <button class="tab" data-tab="publications">发表</button>
+    <button class="tab" data-tab="daily">日常</button>
+    <button class="tab" data-tab="blog">技术博客</button>
+  </div>
+  <div class="tab-content">
+    <div class="tab-panel active" id="research">
+      <!-- 研究内容 -->
+      <h2>研究</h2>
+      <p>...</p>
+    </div>
+    <div class="tab-panel" id="publications">
+      <!-- 发表内容 -->
+      <h2>发表</h2>
+      <p>...</p>
+    </div>
+    <div class="tab-panel" id="daily">
+      <!-- 日常内容 -->
+      <h2>日常</h2>
+      <p>...</p>
+    </div>
+    <div class="tab-panel" id="blog">
+      <!-- 技术博客内容 -->
+      <h2>技术博客</h2>
+      <p>...</p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
